@@ -23,6 +23,10 @@ pre-commit install
 
 The first time you commit it may take a little longer than you'd hope, but subsequent commits will be quicker.
 
+> Commits will **fail** if any files are formatted, but the files will still be formatted. This is so you are aware of the reformat and also so we don't accidentally reformat something we don't want to reformat.
+
+If you want to run the commit without running the hook, do `git commit --no-verify`. This is highly discouraged, we should be aiming for consistent code, and using a formatter really helps us achieve that!
+
 ## allow_prereleases
 
 The Pipfile has `allow_prereleases = "true"` because for Black this is required. Make sure when installing libraries that the latest stable version is used, but try to avoid using alpha and beta versions where possible.
