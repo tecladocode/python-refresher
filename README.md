@@ -28,3 +28,9 @@ The first time you commit it may take a little longer than you'd hope, but subse
 The Pipfile has `allow_prereleases = "true"` because for Black this is required. Make sure when installing libraries that the latest stable version is used, but try to avoid using alpha and beta versions where possible.
 
 There are times where it will be unavoidable to use prerelease versions of libraries used in a course to teach actual content. We should discuss them on an individual basis. The reason for this is that if we cover an alpha version of a library, it's likely it will change by the time the course is released.
+
+## Creating course documentation
+
+Internal course documentation (for recording purposes) should go in Notion ((https://www.notion.so/teclado/Course-Wikis-fdd4b72cb5f74e1a9d7172f03e5c24cd)[https://www.notion.so/teclado/Course-Wikis-fdd4b72cb5f74e1a9d7172f03e5c24cd]).
+
+If there is documentation or files that students would benefit from having, they should be included in this repository alongside the code.
