@@ -1,0 +1,5 @@
+*.cmproj
+*.pyc
+__pycache__
+*.mp4
+tempCodeRunnerFile.py
