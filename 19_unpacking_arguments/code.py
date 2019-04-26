@@ -34,8 +34,6 @@ nums = {"x": 15, "y": 25}
 print(add(**nums))
 
 # -- Unpacking kwargs --
-
-
 def named(**kwargs):
     print(kwargs)
 
@@ -47,6 +45,8 @@ named(
 )  # Unpack dict into arguments. This is OK, but slightly more confusing. Good when working with variables though.
 
 # -- Unpacking and repacking --
+def named(**kwargs):
+    print(kwargs)
 
 
 def print_nicely(**kwargs):
@@ -56,3 +56,46 @@ def print_nicely(**kwargs):
 
 
 print_nicely(name="Bob", age=25)
+
+# -- Forced named parameter --
+
+
+def multiply(*args):
+    total = 1
+    for arg in args:
+        total = total * arg
+
+    return total
+
+
+def apply(*args, operator):
+    if operator == "*":
+        return multiply(args)
+    elif operator == "+":
+        return sum(args)
+    else:
+        raise ValueError("No valid operator provided to apply().")
+
+
+print(apply(1, 3, 6, 7, operator="+"))
+print(apply(1, 3, 5, "+"))  # Error
+
+# -- Both --
+
+
+def both(*args, **kwargs):
+    print(args)
+    print(kwargs)
+
+
+both(1, 3, 5, name="Bob", age=25)
+
+# This is normally used to accept an unlimited number of arguments and keyword arguments, such that some of them can be passed onto other functions.
+# You'll frequently see things like these in Python code:
+
+"""
+def post(url, data=None, json=None, **kwargs):
+    return request('post', url, data=data, json=json, **kwargs)
+"""
+
+# While the implementation is irrelevant at this stage, what it allows is for the caller of `post()` to pass arguments to `request()`.
