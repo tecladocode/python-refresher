@@ -3,3 +3,7 @@
 __pycache__
 *.mp4
 tempCodeRunnerFile.py
+.vscode/
+.idea/
+videos
+exports
