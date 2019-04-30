@@ -99,3 +99,13 @@ def post(url, data=None, json=None, **kwargs):
 """
 
 # While the implementation is irrelevant at this stage, what it allows is for the caller of `post()` to pass arguments to `request()`.
+
+# -- Error when unpacking --
+
+
+def myfunction(**kwargs):
+    print(kwargs)
+
+
+myfunction(**"Bob")  # Error, must be mapping
+myfunction(**None)  # Error
