@@ -16,11 +16,11 @@ l[0] = "Smith"
 print(l)
 print(t)
 
-# Extend lists by using `.extend`
+# Add to a list by using `.append`
 
-l.extend("Jen")
+l.append("Jen")
 print(l)
-# Tuples cannot be 'extended' because they are immutable.
+# Tuples cannot be appended to because they are immutable.
 
 # Add to sets by using `.add`
 

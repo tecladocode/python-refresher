@@ -5,7 +5,7 @@ if day_of_week == "Monday":
 elif day_of_week == "Friday":
     print("It's ok to finish a bit early!")
 else:
-    print("Full power ahead!")
+    print("Full speed ahead!")
 
 # -- Problem: user not entering what we expect --
 
@@ -16,4 +16,4 @@ if day_of_week == "monday":
 elif day_of_week == "friday":
     print("It's ok to finish a bit early!")
 else:
-    print("Full power ahead!")
+    print("Full speed ahead!")

@@ -12,9 +12,8 @@ def divide(dividend, divisor):
         return "You fool!"
 
 
-result = calculate(
-    20, 4, operator=divide
-)  # We pass the `divide` function as an argument
+# We pass the `divide` function as an argument
+result = calculate(20, 4, operator=divide)
 print(result)
 
 

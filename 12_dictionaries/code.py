@@ -32,3 +32,8 @@ if "Bob" in student_attendance:
     print(f"Bob: {student_attendance[student]}")
 else:
     print("Bob isn't a student in this class!")
+
+# -- Calculate an average with `.values()` --
+
+attendace_values = student_attendance.values()
+print(sum(attendace_values) / len(attendace_values))

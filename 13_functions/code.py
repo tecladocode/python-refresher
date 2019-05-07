@@ -26,7 +26,7 @@ def print():
     print("Hello, world!")  # Error!
 
 
-# -- Don't reuse names at any stage, it's generally confusing! --
+# -- Don't reuse names, it's generally confusing! --
 friends = ["Rolf", "Bob"]
 
 

@@ -26,6 +26,9 @@ def double(x):
 
 sequence = [1, 3, 5, 9]
 
+doubled = [
+    double(x) for x in sequence
+]  # Put the result of double(x) in a new list, for each of the values in `sequence`
 doubled = map(double, sequence)
 print(list(doubled))
 

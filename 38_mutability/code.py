@@ -44,9 +44,9 @@ print(
 
 # Most things are mutable in Python. If you want to keep one of your classes immutable, don't add any methods that change the objects' properties.
 
-# Tuples are the only fundamental collection in Python which is immutable.
+# Tuples and strings are the only fundamental collection in Python which is immutable.
 # Lists, sets, dictionaries are all mutable.
-# Integers, floats, strings, and booleans are all immutable.
+# Integers, floats, and booleans are all immutable.
 
 # -- += and similar --
 

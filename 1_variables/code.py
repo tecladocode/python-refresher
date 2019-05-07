@@ -1,4 +1,4 @@
-# -- Numbers and Decimals --
+# -- Numbers and Floats --
 
 x = 15
 price = 9.99
@@ -11,6 +11,7 @@ print(result)
 
 # -- Strings --
 
+name = "Rolf"
 name = "Rolf"
 
 print(name)
@@ -29,7 +30,7 @@ print(b)
 
 b = 17
 
-# Here we've given the value '17' the name 'b'. The name 'a' still is a name for '25'!
+# Here we've given the value '17' the name 'b'. The name 'a' is still a name for '25'!
 
 print(a)
 print(b)

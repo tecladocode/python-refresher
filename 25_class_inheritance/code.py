@@ -19,7 +19,8 @@ class Device:
 
 class Printer(Device):
     def __init__(self, name, connected_by, capacity):
-        super().__init__(name, connected_by)
+        # super(Printer, self).__init__(name, connected_by)  - Python2.7
+        super().__init__(name, connected_by)  # Python3+
         self.capacity = capacity
         self.remaining_pages = capacity
 
