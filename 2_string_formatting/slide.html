@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Code</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/reveal.css" />
+    <link rel="stylesheet" href="../css/theme/teclado.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "../css/print/pdf.css"
+        : "../css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <img src="../img/logo.svg" class="logo" />
+      <div class="blog-link">https://blog.tecla.do</div>
+      <div class="slides">
+        <!-- Each slide is a `section`. Duplicate the whole thing and modify the code and `data-line-numbers` for highlighting. -->
+        <section data-transition="none">
+          <h1>String formatting</h1>
+          <pre><code data-trim data-line-numbers>
+            name = "Rolf"
+            greeting = f"Hello, {name}"
+
+            print(greeting)  # "Hello, Rolf"
+            print(f"Hello, {name}")  # "Hello, Rolf"
+					</code></pre>
+        </section>
+        <!-- End duplication -->
+
+        <section data-transition="none">
+          <h1>String formatting</h1>
+          <pre><code data-trim data-line-numbers="4">
+            name = "Rolf"
+            greeting = f"Hello, {name}"
+
+            print(greeting)  # "Hello, Rolf"
+            print(f"Hello, {name}")  # "Hello, Rolf"
+          </code></pre>
+        </section>
+
+        <section data-transition="none">
+          <h1>String formatting</h1>
+          <pre><code data-trim data-line-numbers="5">
+              name = "Rolf"
+              greeting = f"Hello, {name}"
+  
+              print(greeting)  # "Hello, Rolf"
+              print(f"Hello, {name}")  # "Hello, Rolf"
+            </code></pre>
+        </section>
+
+        <section data-transition="none">
+          <h1>Reusable formatting</h1>
+          <pre><code data-trim data-line-numbers>
+            longer_phrase = "Hello, {}. Today is {}."
+            formatted = longer_phrase.format("Rolf", "Monday")
+            print(formatted)  # Hello, Rolf. Today is Monday.
+            </code></pre>
+        </section>
+        <section data-transition="none">
+          <h1>Reusable formatting</h1>
+          <pre><code data-trim data-line-numbers="2">
+            longer_phrase = "Hello, {}. Today is {}."
+            formatted = longer_phrase.format("Rolf", "Monday")
+            print(formatted)  # Hello, Rolf. Today is Monday.
+            </code></pre>
+        </section>
+      </div>
+    </div>
+
+    <script src="../js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        width: "100%",
+        height: "100%",
+        margin: 0,
+        dependencies: [
+          { src: "../plugin/markdown/marked.js" },
+          { src: "../plugin/markdown/markdown.js" },
+          { src: "../plugin/notes/notes.js", async: true },
+          { src: "../plugin/highlight/highlight.js", async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>

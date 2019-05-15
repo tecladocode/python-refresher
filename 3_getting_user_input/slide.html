@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Code</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/reveal.css" />
+    <link rel="stylesheet" href="../css/theme/teclado.css" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="../lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "../css/print/pdf.css"
+        : "../css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <img src="../img/logo.svg" class="logo" />
+      <div class="blog-link">https://blog.tecla.do</div>
+      <div class="slides">
+        <!-- Each slide is a `section`. Duplicate the whole thing and modify the code and `data-line-numbers` for highlighting. -->
+        <section data-transition="none">
+          <h1>User input</h1>
+          <pre><code data-trim data-line-numbers>
+              size_input = input("How big is your house (in square feet): ")
+              square_feet = int(size)
+              square_metres = square_feet * 15  # Make sure this is correct
+              print(f"{square_feet} square feet is {square_metres} square metres.")
+					</code></pre>
+        </section>
+        <!-- End duplication -->
+
+        <section data-transition="none">
+          <h1>User input</h1>
+          <pre><code data-trim data-line-numbers="1">
+              size_input = input("How big is your house (in square feet): ")
+              square_feet = int(size)
+              square_metres = square_feet * 15  # Make sure this is correct
+              print(f"{square_feet} square feet is {square_metres} square metres.")
+          </code></pre>
+        </section>
+
+        <section data-transition="none">
+          <h1>User input to numbers</h1>
+          <pre><code data-trim data-line-numbers="2">
+              size_input = input("How big is your house (in square feet): ")
+              square_feet = int(size)
+              square_metres = square_feet * 15  # Make sure this is correct
+              print(f"{square_feet} square feet is {square_metres} square metres.")
+          </code></pre>
+        </section>
+      </div>
+    </div>
+
+    <script src="../js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        width: "100%",
+        height: "100%",
+        margin: 0,
+        dependencies: [
+          { src: "../plugin/markdown/marked.js" },
+          { src: "../plugin/markdown/markdown.js" },
+          { src: "../plugin/notes/notes.js", async: true },
+          { src: "../plugin/highlight/highlight.js", async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>
