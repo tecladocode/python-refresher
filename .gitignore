@@ -4,6 +4,8 @@ Python_refresher_notes
 *.pyc
 __pycache__
 *.mp4
+*.mkv
+*.hfp
 tempCodeRunnerFile.py
 .vscode/
 .idea/
