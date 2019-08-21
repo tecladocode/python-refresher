@@ -14,12 +14,12 @@ print(username_mapping["Bob"])  # (0, "Bob", "password")
 
 # -- Can be useful to log in for example --
 
-username = input("Enter your username: ")
-password = input("Enter your password: ")
+username_input = input("Enter your username: ")
+password_input = input("Enter your password: ")
 
-user = username_mapping[username]
+_, username, password = username_mapping[username_input]
 
-if user and password == user[2]:
+if password_input == password:
     print("Your details are correct!")
 else:
     print("Your details are incorrect.")

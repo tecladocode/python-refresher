@@ -50,7 +50,7 @@ def apply(*args, operator):
     elif operator == "+":
         return sum(args)
     else:
-        raise ValueError("No valid operator provided to apply().")
+        return "No valid operator provided to apply()."
 
 
 print(apply(1, 3, 6, 7, operator="+"))

@@ -1,5 +1,6 @@
 Python_refresher_notes
 *.cmproj
+*.tscproj
 *.pyc
 __pycache__
 *.mp4
@@ -8,3 +9,4 @@ tempCodeRunnerFile.py
 .idea/
 videos
 exports
+captions

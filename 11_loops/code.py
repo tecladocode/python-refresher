@@ -1,5 +1,6 @@
 # -- While loop --
 
+number = 7
 play = input("Would you like to play? (Y/n) ")
 
 while play != "n":

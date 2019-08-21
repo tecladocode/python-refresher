@@ -30,7 +30,7 @@ print(book)  # What?
 
 
 class BookShelf:
-    def __init__(self, books):
+    def __init__(self, *books):
         self.books = books
 
     def __str__(self):
@@ -44,5 +44,5 @@ class Book:
 
 book = Book("Harry Potter")
 book2 = Book("Python 101")
-shelf = BookShelf([book, book2])
+shelf = BookShelf(book, book2)
 print(shelf)
