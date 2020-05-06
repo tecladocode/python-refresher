@@ -38,13 +38,14 @@ def add_friend():
 add_friend()
 print(friends)  # Always ['Rolf', 'Bob']
 
-# -- Can't call a function before defining it --
-
-say_hello()
-
 
 def say_hello():
     print("Hello!")
+
+
+# -- Can't call a function before defining it --
+
+say_hello()
 
 
 # -- Remember function body only runs when the function is called --
