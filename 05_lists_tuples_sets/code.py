@@ -19,6 +19,7 @@ print(t)
 # Add to a list by using `.append`
 
 l.append("Jen")
+l.remove(l[0])
 print(l)
 # Tuples cannot be appended to because they are immutable.
 
