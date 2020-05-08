@@ -1,6 +1,9 @@
 # A first class function just means that functions can be passed as arguments to functions.
 
 
+from operator import itemgetter
+
+
 def calculate(*values, operator):
     return operator(*values)
 
@@ -45,7 +48,12 @@ def get_friend_name(friend):
     return friend["name"]
 
 
-print(search(friends, "Bob Smith", get_friend_name))
+try:
+    print(search(friends, "Bob Smith", get_friend_name))
+except RuntimeError as ex:
+    print(ex)
+except ValueError as ex:
+    print(f"Value Error: {ex}")
 
 # -- using lambdas since this can be simple enough --
 
@@ -67,8 +75,6 @@ print(search(friends, "Bob Smith", lambda friend: friend["name"]))
 
 
 # -- or as an extra, using built-in functions --
-
-from operator import itemgetter
 
 
 def search(sequence, expected, finder):
