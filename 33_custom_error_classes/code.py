@@ -11,7 +11,8 @@ class Book:
 
     def read(self, pages: int):
         self.pages_read += pages
-        print(f"You have now read {self.pages_read} pages out of {self.page_count}")
+        print(
+            f"You have now read {self.pages_read} pages out of {self.page_count}")
 
 
 python101 = Book("Python 101", 50)
@@ -42,11 +43,15 @@ class Book:
                 f"You tried to read {self.pages_read + pages} pages, but this book only has {self.page_count} pages."
             )
         self.pages_read += pages
-        print(f"You have now read {self.pages_read} pages out of {self.page_count}")
+        print(
+            f"You have now read {self.pages_read} pages out of {self.page_count}")
 
 
 python101 = Book("Python 101", 50)
-python101.read(35)
-python101.read(
-    50
-)  # This now raises an error, which has a helpful name and a helpful error message.
+
+try:
+    python101.read(35)
+    python101.read(50
+                   )  # This now raises an error, which has a helpful name and a helpful error message.
+except TooManyPagesReadError as ex:
+    print(ex)
